@@ -11,7 +11,7 @@ switch ($method) {
         break;
     case 'POST':
         if (!isset($data['title']) || !isset($data['description'])) {
-            echo json_encode(["success" => false, "message" => "Missing task details - updated msg"]);
+            echo json_encode(["success" => false, "message" => "Missing task details - updated msg 2"]);
             exit;
         }
         $stmt = $pdo->prepare("INSERT INTO tasks (title, description) VALUES (?, ?)");
