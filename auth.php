@@ -10,6 +10,7 @@ if (!isset($data["username"]) || !isset($data["password"])) {
     exit;
 }
 
+
 $username = $data["username"];
 $password = $data["password"];
 
